@@ -5,7 +5,12 @@ module.exports = {
     "./src/components/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        memesique: ["memesique-regular"],
+        gretaros: ["gretators-regular"],
+      },
+    },
   },
   plugins: [],
 }

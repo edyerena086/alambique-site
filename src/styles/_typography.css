@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "memesique-regular";
+    src: url("./../static/fonts/Memesique-Regular.woff2");
+}
+
+@font-face {
+    font-family: "gretators-regular";
+    src: url("./../static/fonts/Gretaros-Regular.otf");
+}
