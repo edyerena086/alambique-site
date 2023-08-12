@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 > p > b, h2 > p > b, h3 > p > b, h4 > p > b {
+    @apply text-pink;
+  }
+
+  .imageColumnParagraph > p {
+    @apply font-body text-sm md:text-base mt-5 text-center md:text-left;
+  }
+
+  .imageColumnParagraph > p > b {
+    @apply text-pink font-black uppercase;
+  }
+
+  .contentColumnWrapper p {
+    @apply font-body text-center;
+  }
+
+  .contentColumnText > p {
+    @apply text-sm md:text-base
+  }
+}
