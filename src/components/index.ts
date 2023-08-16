@@ -12,6 +12,7 @@ import ProductGrid from "./productGrid"
 // Import general components
 import PageTitle from "./pageTitle"
 import SectionTitle from "./sectionTitle"
+import RichContent from "./richText"
 
 export {
   Seo,
@@ -24,5 +25,6 @@ export {
   ContentColumn, 
   ProductGrid, 
   PageTitle, 
-  SectionTitle
+  SectionTitle,
+  RichContent
 }

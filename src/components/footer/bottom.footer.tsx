@@ -27,7 +27,7 @@ const BottomFooter: FC = () => {
         Todos los derechos reservados Lamabique Café { new Date().getFullYear() }
       </p>
 
-      <Link to={'/'} className={`${styleClasses.paragraph} ${styleClasses.link}`}>Aviso de Privacidad</Link>
+      <Link to={'/aviso-de-privacidad'} className={`${styleClasses.paragraph} ${styleClasses.link}`}>Aviso de Privacidad</Link>
     </div>
   )
 }

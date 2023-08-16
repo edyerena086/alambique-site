@@ -22,4 +22,20 @@
   .contentColumnText > p {
     @apply text-sm md:text-base
   }
+
+  .richContent > p, .richContent > ul {
+    @apply text-center md:text-left font-body mt-3;
+  }
+  .richContent > p > b {
+    @apply text-pink;
+  }
+  .richContent > h3 {
+    @apply text-center md:text-left mt-6 font-title text-xl md:text-2xl font-black;
+  }
+  .richContent > ul {
+    @apply mt-2 list-disc pl-7 text-left;
+  }
+  .richContent > ul > li {
+    @apply text-sm;
+  }
 }
