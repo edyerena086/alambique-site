@@ -32,7 +32,7 @@ query HomePageQuery {
     }
     header {
       logo {
-        gatsbyImageData(formats: PNG, height: 100)
+        gatsbyImageData(height: 100)
       }
       logoLink
       items {
@@ -43,7 +43,7 @@ query HomePageQuery {
     }
     homeHeroBanner {
       background {
-        gatsbyImageData(formats: PNG, height: 600)
+        gatsbyImageData(height: 600)
       }
       pageTitle {
         raw
@@ -66,13 +66,13 @@ query HomePageQuery {
           raw
         }
         image {
-          gatsbyImageData(formats: PNG, height: 200)
+          gatsbyImageData(height: 200)
         }
       }
     }
     imageColumn {
       image {
-        gatsbyImageData(formats: PNG, height: 350)
+        gatsbyImageData(height: 350)
       }
       text {
         raw
@@ -85,7 +85,7 @@ query HomePageQuery {
       columns {
         isProduct
         image {
-          gatsbyImageData(formats: PNG, height: 160)
+          gatsbyImageData(height: 160)
         }
         columnName {
           raw

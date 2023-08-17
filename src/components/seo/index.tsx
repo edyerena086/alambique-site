@@ -5,9 +5,12 @@ import { Helmet } from 'react-helmet'
 // Import interfaces
 import { SeoPropsInterface } from './interfaces'
 
-const Seo: FC<SeoPropsInterface> = ({ pageTitle }) => {
+const Seo: FC<SeoPropsInterface> = ({ pageTitle, metaDescription, metaKeywords }) => {
   return (
-    <Helmet title={pageTitle} />
+    <Helmet title={`${pageTitle} - Alambique Café`}>
+      <meta name={'description'} content={metaDescription} />
+      <meta name={'keywords'} content={metaKeywords} />
+    </Helmet>
   )
 }
 

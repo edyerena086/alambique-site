@@ -27,7 +27,7 @@ query MenuPageQuery {
     }
     header {
       logo {
-        gatsbyImageData(formats: PNG, height: 100)
+        gatsbyImageData(height: 100)
       }
       logoLink
       items {
@@ -52,7 +52,7 @@ query MenuPageQuery {
         raw
       }
       image {
-        gatsbyImageData(formats: PNG, height: 200)
+        gatsbyImageData(height: 200)
       }
     }
     footer {
