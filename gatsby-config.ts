@@ -23,6 +23,15 @@ const config: GatsbyConfig = {
         icon: 'src/images/icon.png'
       }
     },
+    // GTM 
+    {
+      resolve: 'gatsby-plugin-google-tagmanager',
+      options: {
+        id: process.env.GTM_ID,
+        includeInDevelopment: false,
+        defaultDataLayer: { platform: "gatsby" },
+      },
+    },
     // Google fonts
     {
       resolve: 'gatsby-plugin-google-fonts',
