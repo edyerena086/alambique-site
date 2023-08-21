@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import type { PageProps } from 'gatsby'
 
 // Import components
-import { Layout, ImageColumn, ContentColumn, HomeHeroBanner } from '@components/index'
+import { Layout, ImageColumn, ContentColumn, HomeHeroBanner, Maps } from '@components/index'
 
 const IndexPage: FC<PageProps> = ({ data }) => {
   const { footer, seo, header, imageColumn, conciencia, products, homeHeroBanner } = data?.contentfulHomePage
@@ -15,6 +15,7 @@ const IndexPage: FC<PageProps> = ({ data }) => {
         <HomeHeroBanner { ...homeHeroBanner } />
         <ContentColumn { ...products } />
         <ImageColumn {...imageColumn} />
+        <Maps />
         <ContentColumn { ...conciencia } />
       </Layout>
     </Fragment>

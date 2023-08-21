@@ -13,6 +13,7 @@ import ProductGrid from "./productGrid"
 import PageTitle from "./pageTitle"
 import SectionTitle from "./sectionTitle"
 import RichContent from "./richText"
+import Maps from "./maps"
 
 export {
   Seo,
@@ -26,5 +27,6 @@ export {
   ProductGrid, 
   PageTitle, 
   SectionTitle,
-  RichContent
+  RichContent,
+  Maps
 }
