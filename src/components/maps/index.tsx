@@ -14,10 +14,12 @@ const Maps: FC = () => {
 
   const apiKey = process.env.GATSBY_GOOGLE_MAPS_KEY
 
+  console.log('my api ===>', apiKey)
+
   return (
     <section className={styleClasses.section}>
       <GoogleMapReact
-        bootstrapURLKeys={apiKey}
+        bootstrapURLKeys={{key: apiKey}}
         defaultCenter={{lat: 25.686613, lng: -100.316116 }}
         defaultZoom={11}
       />
