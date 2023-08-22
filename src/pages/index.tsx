@@ -7,7 +7,7 @@ import type { PageProps } from 'gatsby'
 import { Layout, ImageColumn, ContentColumn, HomeHeroBanner, Maps } from '@components/index'
 
 const IndexPage: FC<PageProps> = ({ data }) => {
-  const { footer, seo, header, imageColumn, conciencia, products, homeHeroBanner } = data?.contentfulHomePage
+  const { footer, seo, header, imageColumn, conciencia, products, homeHeroBanner, location } = data?.contentfulHomePage
 
   return (
     <Fragment>
@@ -15,7 +15,7 @@ const IndexPage: FC<PageProps> = ({ data }) => {
         <HomeHeroBanner { ...homeHeroBanner } />
         <ContentColumn { ...products } />
         <ImageColumn {...imageColumn} />
-        <Maps />
+        <Maps {...location} />
         <ContentColumn { ...conciencia } />
       </Layout>
     </Fragment>
@@ -80,6 +80,19 @@ query HomePageQuery {
       }
       sectionTitle {
         raw
+      }
+    }
+    location {
+      sectionTitle {
+        raw
+      }
+      center {
+        lat
+        lon
+      }
+      store {
+        lat
+        lon
       }
     }
     conciencia {

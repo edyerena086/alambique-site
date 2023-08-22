@@ -29,7 +29,7 @@ const HomeHeroBanner: FC<HomeHeroBannerPropsInterface> = ({ pageTitle, descripti
       'font-body uppercase text-center md:text-left text-sm text-white font-bold mt-8 lg:w-[70%]'
     ]),
     backgroundImage: classy([
-      'w-full max-h-[280px] md:max-h-[500px]',
+      'w-full min-h-[280px] max-h-[280px] md:min-h-[500px] md:max-h-[500px]',
     ]),
   }
 
