@@ -14,7 +14,7 @@ const Maps: FC = () => {
       'h-[600px] flex justify-center'
     ]),
     titleWrapper: classy([
-      'z-50 absolute bg-white py-4 px-6 shadow-lg rounded-b-lg'
+      'z-[19] absolute bg-white py-4 px-6 shadow-lg rounded-b-lg'
     ]),
   }
 
