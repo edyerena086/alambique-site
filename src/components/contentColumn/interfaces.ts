@@ -9,6 +9,7 @@ type contentColumnItem = {
 }
 
 export interface ContentColumnPropsInterfaces {
+  isInverted?: boolean
   columns: contentColumnItem[]
   sectionTitle: any
   subTitle?: string | null

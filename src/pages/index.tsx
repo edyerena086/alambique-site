@@ -27,23 +27,14 @@ query HomePageQuery {
   contentfulHomePage {
     title
     seo {
-      pageTitle
-      metaDescription
-      metaKeywords
+      ...seoFragment
     }
     header {
-      logo {
-        gatsbyImageData(height: 100)
-      }
-      logoLink
-      items {
-        name
-        to
-        showOff
-      }
+      ...headerFragment
     }
     homeHeroBanner {
       background {
+        description
         gatsbyImageData(height: 600)
       }
       pageTitle {
@@ -57,6 +48,7 @@ query HomePageQuery {
       sectionTitle {
         raw
       }
+      isInverted
       subTitle
       columns {
         isProduct
@@ -67,12 +59,14 @@ query HomePageQuery {
           raw
         }
         image {
+          description
           gatsbyImageData(height: 200)
         }
       }
     }
     imageColumn {
       image {
+        description
         gatsbyImageData(height: 350)
       }
       text {
@@ -96,9 +90,11 @@ query HomePageQuery {
       }
     }
     conciencia {
+      isInverted
       columns {
         isProduct
         image {
+          description
           gatsbyImageData(height: 160)
         }
         columnName {
@@ -113,18 +109,7 @@ query HomePageQuery {
       }
     }
     footer {
-      id
-      sitemap {
-        name
-        to
-        showOff
-      }
-      socialMedia {
-        items {
-          name
-          to
-        }
-      }
+      ...footerFragment
     }
   }
 }

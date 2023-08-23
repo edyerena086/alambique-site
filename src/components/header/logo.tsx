@@ -23,7 +23,7 @@ const Logo: FC<LogoPropsInterface> = ({ logo, logoLink }) => {
       className={styleClasses.div}
     >
       <Link to={logoLink}>
-        <GatsbyImage image={logoImage} alt={'This is an image'} />
+        <GatsbyImage image={logoImage} alt={logo?.description} />
       </Link>
     </div>
   )

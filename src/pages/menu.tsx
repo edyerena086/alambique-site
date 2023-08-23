@@ -21,20 +21,10 @@ export const query = graphql`
 query MenuPageQuery {
   contentfulMenuPage {
     seo {
-      pageTitle
-      metaDescription
-      metaKeywords
+      ...seoFragment
     }
     header {
-      logo {
-        gatsbyImageData(height: 100)
-      }
-      logoLink
-      items {
-        name
-        to
-        showOff
-      }
+      ...headerFragment
     }
     pageTitle{
       mainTitle {
@@ -53,21 +43,11 @@ query MenuPageQuery {
       }
       image {
         gatsbyImageData(height: 200)
+        description
       }
     }
     footer {
-      id
-      sitemap {
-        name
-        to
-        showOff
-      }
-      socialMedia {
-        items {
-          name
-          to
-        }
-      }
+      ...footerFragment
     }
   }
 }

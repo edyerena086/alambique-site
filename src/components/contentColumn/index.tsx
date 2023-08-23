@@ -12,7 +12,7 @@ import { classy } from '@utils/index'
 // Import interfaces
 import { ContentColumnPropsInterfaces } from './interfaces'
 
-const ContentColumn: FC<ContentColumnPropsInterfaces> = ({ columns, sectionTitle, subTitle = null }) => {
+const ContentColumn: FC<ContentColumnPropsInterfaces> = ({ columns, sectionTitle, subTitle = null, isInverted = false }) => {
   const styleClasses = {
     contentWrapper: classy([
       'grid grid-cols-1 md:grid-cols-3 md:gap-4 mt-9'
@@ -32,7 +32,7 @@ const ContentColumn: FC<ContentColumnPropsInterfaces> = ({ columns, sectionTitle
   }
 
   return (
-    <Section>
+    <Section type={isInverted ? 'inverted' : 'default'}>
       <SectionTitle isCentered subTitle={subTitle}>
         {
           sectionTitle?.raw && renderRichText(sectionTitle)
